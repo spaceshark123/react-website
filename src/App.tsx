@@ -3,6 +3,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Button from './Button'
 
+
+
 function App() {
   return (
     <>
@@ -14,9 +16,9 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>React Website by Spaceshark</h1>
       <div className="card">
-        {Array.from({ length: 504 }, (_, i) => (
+        {Array.from({ length: 20*20 }, (_, i) => (
           <Button key={i} />
         ))}
         <p>

@@ -1,0 +1,30 @@
+.true {
+    background-color: #4CAF50;
+    color: black;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.false {
+    background-color: #464242;
+    color: white;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+.toggle {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    cursor: pointer;
+    border : none;
+    box-shadow: 0px 0px 10px 0px #000000;
+    overflow: hidden;
+    transition: background-color 0.07s, color 0.07s;
+    /* use monospace code font: */
+    font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+}
+
+.toggle:hover {
+    transform: scale(1.1);
+}

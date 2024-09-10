@@ -1,12 +1,22 @@
 import { useState } from 'react'
+import './Button.css'
+
+const updateClass = (toggle: boolean) => {
+    return toggle.toString() + " toggle";
+}
+
 
 function Button() {
-  const [count, setCount] = useState(0)
+  const [toggle, setToggle] = useState(false)
 
   return (
-    <button onClick={() => setCount((count) => count + 1)}>
-      {count}
-    </button>
+      // toggle button that turns on when mouse is held down over it (dragging or clicking)
+      <button
+            className={updateClass(toggle)} onMouseOver={() => setToggle(!toggle)}
+      >
+          { toggle ? "1" : "0" }
+      </button>
+      
   )
 }
 
